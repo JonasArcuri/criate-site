@@ -25,7 +25,7 @@ const Navbar = () => {
     // CTA de contato já está no header fixo, mas pode ser adicionado aqui se necessário
   ];
 
-  const logoText = "Criaté";
+  // const logoText = "Criaté";
 
   const scrollToContact = (e) => {
     e.preventDefault();
@@ -51,7 +51,7 @@ const Navbar = () => {
               <img src="/public/logocriate.png" alt="Criaté Logo" className="h-9 w-9 md:h-10 md:w-10" />
             </motion.div>
             <span className="text-2xl md:text-3xl font-bold text-foreground group-hover:text-primary transition-colors duration-300 tracking-tight">
-              {logoText}
+              {/* {logoText} */}
             </span>
           </a>
 
