@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 17% 7%; /* Dark Navy/Black */
+    --foreground: 220 20% 92%; 
+    
+    --card: 220 17% 10%; 
+    --card-foreground: 220 20% 90%; 
+    
+    --popover: 220 17% 9%;
+    --popover-foreground: 220 20% 90%;
+    
+    --primary: 217 91% 60%; /* Blue */
+    --primary-foreground: 220 20% 98%; 
+    --primary-hsl: 217 91% 60%;
+    
+    --secondary: 145 63% 49%; /* Green */
+    --secondary-foreground: 220 20% 98%; 
+    
+    --accent: 262 80% 60%; /* Purple */
+    --accent-foreground: 220 20% 98%; 
+
+    --highlight: 26 95% 54%; /* Orange */
+    --highlight-foreground: 220 20% 98%;
+    
+    --muted: 220 17% 15%; 
+    --muted-foreground: 220 15% 65%; 
+    
+    --destructive: 0 72% 51%; 
+    --destructive-foreground: 0 0% 98%; 
+    
+    --border: 220 17% 20%; 
+    --input: 220 17% 18%; 
+    --ring: 217 91% 65%; /* Brighter Blue for focus */
+    
+    --radius: 0.75rem; 
+  }
+
+  /* No .dark class needed if dark is default */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+    @apply font-sans text-base leading-relaxed; 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-semibold text-foreground; 
+  }
+  p {
+    @apply text-muted-foreground; 
+  }
+  ::selection {
+    @apply bg-primary/30 text-primary-foreground;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-section-md md:py-section-lg; 
+  }
+  .container { 
+    @apply max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+  
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 text-sm font-semibold rounded-lg shadow-soft transition-all duration-300 ease-in-out;
+    @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring focus:ring-offset-background;
+    @apply hover:shadow-medium transform hover:-translate-y-0.5 active:translate-y-0 active:shadow-soft;
+  }
+  .btn-primary { 
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 shadow-glow-primary;
+  }
+  .btn-secondary { 
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary/90 shadow-glow-secondary;
+  }
+  .btn-accent {
+    @apply bg-accent text-accent-foreground hover:bg-accent/90 shadow-glow-accent;
+  }
+  .btn-highlight {
+    @apply bg-highlight text-highlight-foreground hover:bg-highlight/90 shadow-glow-highlight;
+  }
+  .btn-outline-primary {
+    @apply bg-transparent border-2 border-primary text-primary hover:bg-primary/10 hover:text-primary-foreground;
+  }
+   .btn-outline-secondary {
+    @apply bg-transparent border-2 border-secondary text-secondary hover:bg-secondary/10 hover:text-secondary-foreground;
+  }
+  .btn-ghost {
+    @apply bg-transparent text-primary hover:bg-primary/10 shadow-none hover:shadow-none transform-none;
+  }
+
+  .form-input {
+    @apply block w-full px-element-sm py-2.5 border border-input bg-input rounded-md shadow-sm placeholder-muted-foreground/70 focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent sm:text-sm transition-colors;
+  }
+  .form-label {
+    @apply block text-sm font-medium text-foreground mb-1.5; 
+  }
+
+  .gradient-text-dynamic {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent;
+  }
+  .gradient-text-criate-premium {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-green-400 to-purple-400;
+  }
+
+  .card-glow-border {
+    @apply border border-transparent relative;
+  }
+  .card-glow-border::before {
+    content: "";
+    @apply absolute -inset-px rounded-xl opacity-0 transition-opacity duration-300;
+    background-image: conic-gradient(from 90deg at 50% 50%, hsl(var(--primary)) 0%, hsl(var(--secondary)) 50%, hsl(var(--accent)) 100%);
+    z-index: -1;
+  }
+  .card-glow-border:hover::before {
+    @apply opacity-75;
+  }
+}
+
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-animate-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Specific styles for dark abstract background */
+.dark-abstract-bg {
+  @apply bg-dark-abstract-layers;
+}
+
+/* Floating CTA Button */
+.floating-cta {
+  @apply fixed bottom-6 right-6 z-40;
+}
