@@ -59,33 +59,7 @@ const Navbar = () => {
                 className="w-full h-full object-cover"
               />
             </motion.div>
-
-            {/* Camaleão como banner retangular animado */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.3 }}
-              className="relative h-14 md:h-14 w-[120=px] md:w-[100px] rounded-xl overflow-hidden border border-border shadow-md"
-            >
-              {/* Imagem preenchendo toda a área */}
-              <motion.img
-                src="/camaleao.jpeg"
-                alt="Camaleão Criaté"
-                className="w-full h-full object-cover"
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.4 }}
-              />
-
-              {/* Língua animada (sobreposta) */}
-              <motion.div
-                className="absolute left-2 top-1/2 h-1 w-0 bg-red-500 rounded-full origin-left"
-                initial={{ width: 0 }}
-                whileHover={{ width: 40 }}
-                transition={{ duration: 0.4, ease: 'easeInOut' }}
-              />
-            </motion.div>
           </a>
-
-
 
           <nav className="hidden lg:flex items-center space-x-7">
             {navLinks.map((link) => (

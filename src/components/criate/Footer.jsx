@@ -41,8 +41,8 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { name: 'LinkedIn', icon: <Linkedin size={18}/>, href: 'https://linkedin.com/company/criate-placeholder' },
-    { name: 'Instagram', icon: <Instagram size={18}/>, href: 'https://instagram.com/criate_placeholder' },
+    { name: 'LinkedIn', icon: <Linkedin size={18}/>, href: 'https://www.linkedin.com/company/criateco/' },
+    { name: 'Instagram', icon: <Instagram size={18}/>, href: 'https://www.instagram.com/criate_co/profilecard/?igsh=MWVzODNlZWFucjkwcA==' },
     { name: 'Youtube', icon: <Youtube size={18}/>, href: 'https://youtube.com/criate_placeholder' },
   ];
 
