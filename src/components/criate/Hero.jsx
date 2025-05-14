@@ -51,7 +51,7 @@ const Hero = () => {
             className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-foreground leading-tight mb-6"
             variants={itemVariants}
           >
-            Transformamos Empresas B2B com <br className="hidden md:inline"/>
+            Transformamos Empresas B2B e B2C com <br className="hidden md:inline"/>
             <span className="gradient-text-criate-premium">Estratégia e Inteligência Artificial</span>
           </motion.h1>
           

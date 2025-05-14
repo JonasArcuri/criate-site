@@ -81,7 +81,7 @@ const Methodology = () => {
         <div className="text-center mb-12 md:mb-16">
           <span className="text-sm font-semibold uppercase tracking-wider text-secondary mb-2 block">Nossa Abordagem</span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
-            Os 4 Pilares da <span className="gradient-text-criate-premium">Transformação B2B</span>
+            Os 4 Pilares da <span className="gradient-text-criate-premium">Transformação B2B e B2C</span>
           </h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto text-lg">
             Nossa metodologia testada e aprovada garante que cada etapa da sua jornada conosco seja estratégica, mensurável e focada em resultados reais.

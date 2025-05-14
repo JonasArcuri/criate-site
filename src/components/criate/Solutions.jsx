@@ -8,7 +8,7 @@ const solutions = [
   {
     icon: <Palette size={28} className="text-primary" />,
     title: 'Posicionamento e Branding Estratégico',
-    description: 'Construímos marcas B2B poderosas que se destacam, geram autoridade e conquistam a confiança do mercado.',
+    description: 'Construímos marcas B2B/B2C poderosas que se destacam, geram autoridade e conquistam a confiança do mercado.',
     color: 'primary',
     tags: ['Identidade de Marca', 'Narrativa', 'Conteúdo']
   },
@@ -64,7 +64,7 @@ const Solutions = () => {
         <div className="text-center mb-12 md:mb-16">
           <span className="text-sm font-semibold uppercase tracking-wider text-primary mb-2 block">Nossas Soluções</span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
-            Soluções B2B Inteligentes para <span className="gradient-text-criate-premium">Crescimento Acelerado</span>
+            Soluções B2B e B2C Inteligentes para <span className="gradient-text-criate-premium">Crescimento Acelerado</span>
           </h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto text-lg">
             Cada solução é desenhada para enfrentar os desafios específicos do mercado B2B, entregando resultados mensuráveis e impacto duradouro.

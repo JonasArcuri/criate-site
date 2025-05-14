@@ -14,7 +14,7 @@ const Footer = () => {
     { 
       title: 'Soluções Chave', 
       links: [
-        { name: 'Geração de Demanda B2B', href: '#solutions' }, 
+        { name: 'Geração de Demanda B2B e B2C', href: '#solutions' }, 
         { name: 'Branding Estratégico', href: '#solutions' }, 
         { name: 'Automação com IA', href: '#solutions' },
         { name: 'Playbooks Comerciais', href: '#solutions' }
@@ -58,7 +58,7 @@ const Footer = () => {
               </span>
             </a>
             <p className="text-sm mb-6 max-w-sm">
-              Especialistas em impulsionar empresas B2B através de estratégias de outbound, branding e inteligência artificial.
+              Especialistas em impulsionar empresas B2B e B2C através de estratégias de outbound, branding e inteligência artificial.
             </p>
             <div className="flex space-x-3">
               {socialLinks.map(social => (

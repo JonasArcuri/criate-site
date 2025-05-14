@@ -46,14 +46,46 @@ const Navbar = () => {
     >
       <div className="container mx-auto">
         <div className="flex items-center justify-between h-20 md:h-24">
-          <a href="#home" className="flex items-center gap-2.5 group">
-            <motion.div whileHover={{ rotate: [0, 10, -5, 0], scale: 1.05 }} transition={{ duration: 0.4 }}>
-              <img src="/logo-criate.png" alt="Criaté Logo" className="h-16 w-16 md:h-20 md:w-20" />
+          <a href="#home" className="flex items-center gap-2 group">
+            {/* Logo Criaté redonda */}
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+              className="h-12 w-12 md:h-14 md:w-14 rounded-full overflow-hidden border-2 border-border shadow"
+            >
+              <img
+                src="/logo-criate.png"
+                alt="Logo Criaté"
+                className="w-full h-full object-cover"
+              />
             </motion.div>
-            <span className="text-2xl md:text-3xl font-bold text-foreground group-hover:text-primary transition-colors duration-300 tracking-tight">
-              {/* {logoText} */}
-            </span>
+
+            {/* Camaleão como banner retangular animado */}
+            <motion.div
+              whileHover={{ scale: 1.02 }}
+              transition={{ duration: 0.3 }}
+              className="relative h-14 md:h-14 w-[120=px] md:w-[100px] rounded-xl overflow-hidden border border-border shadow-md"
+            >
+              {/* Imagem preenchendo toda a área */}
+              <motion.img
+                src="/camaleao.jpeg"
+                alt="Camaleão Criaté"
+                className="w-full h-full object-cover"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.4 }}
+              />
+
+              {/* Língua animada (sobreposta) */}
+              <motion.div
+                className="absolute left-2 top-1/2 h-1 w-0 bg-red-500 rounded-full origin-left"
+                initial={{ width: 0 }}
+                whileHover={{ width: 40 }}
+                transition={{ duration: 0.4, ease: 'easeInOut' }}
+              />
+            </motion.div>
           </a>
+
+
 
           <nav className="hidden lg:flex items-center space-x-7">
             {navLinks.map((link) => (

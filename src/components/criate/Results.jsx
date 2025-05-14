@@ -28,7 +28,7 @@ const resultsData = {
      {
       quote: "L’équipe de Criaté a fait un excellent travail. Grâce à eux, nous avons pu structurer notre marketing de manière plus claire et cohérente. Ce que j’ai vraiment apprécié, c’est la dimension humaine qu’ils apportent, surtout dans la création d’un chatbot qui semble réellement dialoguer comme une personne. C’est fluide, naturel et très efficace. Une belle collaboration.",
       name: "Frederic",
-      title: "FCAD, Dubai",
+      title: "Expert-Comptable, FCAD, Dubai",
       logoName: "frederic.jpeg",
       logoQuery: "industrial company logo strong and geometric orange"
     }
@@ -61,7 +61,7 @@ const Results = () => {
               Impacto Real para Negócios <span className="gradient-text-criate-premium">Como o Seu</span>
             </motion.h2>
             <motion.p variants={itemVariants} className="text-muted-foreground mt-4 max-w-2xl mx-auto text-lg">
-              Não apenas prometemos, nós entregamos. Veja como nossas estratégias transformam o potencial de empresas B2B em crescimento concreto.
+              Não apenas prometemos, nós entregamos. Veja como nossas estratégias transformam o potencial de empresas B2B e B2C em crescimento concreto.
             </motion.p>
           </div>
 

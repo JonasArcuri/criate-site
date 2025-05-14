@@ -25,7 +25,7 @@ const AboutUs = () => {
             <div className="absolute -bottom-8 -right-8 w-40 h-40 bg-secondary/5 rounded-lg blur-2xl transform rotate-12 animate-pulse-glow opacity-50 delay-1000"></div>
             
             <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-hard">
-              <img  class="w-full h-full object-cover" alt="Equipe Criaté em discussão estratégica sobre projetos B2B e IA" src="https://images.unsplash.com/photo-1651009188116-bb5f80eaf6aa" />
+              <img  class="w-full h-full object-cover" alt="Equipe Criaté em discussão estratégica sobre projetos B2B/B2C e IA" src="https://images.unsplash.com/photo-1651009188116-bb5f80eaf6aa" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent"></div>
             </div>
           </motion.div>
@@ -42,7 +42,7 @@ const AboutUs = () => {
               Criatividade com Método, <span className="gradient-text-criate-premium">Performance com Alma.</span>
             </h2>
             <p className="text-muted-foreground mb-5 text-lg">
-              Na Criaté, somos mais que uma agência. Somos seus parceiros estratégicos na conquista de resultados B2B exponenciais. Unimos a vanguarda da inteligência artificial com a profundidade do branding estratégico e a precisão da geração de demanda outbound.
+              Na Criaté, somos mais que uma agência. Somos seus parceiros estratégicos na conquista de resultados B2B/B2C exponenciais. Unimos a vanguarda da inteligência artificial com a profundidade do branding estratégico e a precisão da geração de demanda outbound.
             </p>
             <p className="text-muted-foreground mb-8">
               Nossa missão é clara: impulsionar o crescimento de empresas ambiciosas, como a sua, através de soluções personalizadas que geram autoridade, previsibilidade e oportunidades reais de negócio no cenário nacional e internacional.
