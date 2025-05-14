@@ -31,8 +31,8 @@ const Contact = () => {
   };
 
   const contactDetails = [
-    { icon: <Mail size={20} className="text-primary" />, text: 'contato@criate.com', href: 'mailto:contato@criate.com' },
-    { icon: <Phone size={20} className="text-primary" />, text: '+55 (11) 98765-4321', href: 'tel:+5511987654321' },
+    { icon: <Mail size={20} className="text-primary" />, text: ' Lucas@influencehub360.com', href: 'mailto:contato@criate.com' },
+    { icon: <Phone size={20} className="text-primary" />, text: '+55 11 98525-5719', href: 'tel:+5511987654321' },
     { icon: <MessageSquare size={20} className="text-primary" />, text: 'WhatsApp Direto', href: 'https://wa.me/5511987654321?text=Olá! Gostaria de saber mais sobre a Criaté.' },
     { icon: <MapPin size={20} className="text-primary" />, text: 'Av. Inovação, 123 - São Paulo, SP', href: '#' },
   ];
