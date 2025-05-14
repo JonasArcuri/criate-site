@@ -52,7 +52,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr] gap-10 mb-12">
           <div className="pr-8">
             <a href="#home" className="flex items-center gap-2.5 mb-5 group w-fit">
-              <img src="/criate-logo.svg" alt="Criaté Logo" className="h-10 w-10 group-hover:opacity-80 transition-opacity" />
+              <img src="/logo-criate.png" alt="Criaté Logo" className="h-12 w-12 group-hover:opacity-80 transition-opacity" />
               <span className="text-3xl font-bold text-foreground group-hover:text-primary transition-colors">
                 Criaté
               </span>

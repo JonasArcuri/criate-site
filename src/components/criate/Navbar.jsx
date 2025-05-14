@@ -48,7 +48,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20 md:h-24">
           <a href="#home" className="flex items-center gap-2.5 group">
             <motion.div whileHover={{ rotate: [0, 10, -5, 0], scale: 1.05 }} transition={{ duration: 0.4 }}>
-              <img src="/logo-criate.png" alt="Criaté Logo" className="h-9 w-9 md:h-10 md:w-10" />
+              <img src="/logo-criate.png" alt="Criaté Logo" className="h-16 w-16 md:h-20 md:w-20" />
             </motion.div>
             <span className="text-2xl md:text-3xl font-bold text-foreground group-hover:text-primary transition-colors duration-300 tracking-tight">
               {/* {logoText} */}
