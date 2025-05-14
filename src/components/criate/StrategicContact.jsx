@@ -43,7 +43,7 @@ const StrategicContact = () => {
   const contactPoints = [
     { icon: <Mail size={20} className="text-primary" />, text: 'Lucas@influencehub360.com', href: 'mailto:contato@criate.com.br' },
     { icon: <Phone size={20} className="text-primary" />, text: '+55 11 98525-5719', href: 'tel:+551155552742' },
-    { icon: <Linkedin size={20} className="text-primary" />, text: 'LinkedIn Criaté', href: 'https://linkedin.com/company/criate-placeholder', target: '_blank' },
+    { icon: <Linkedin size={20} className="text-primary" />, text: 'LinkedIn Criaté', href: 'https://www.linkedin.com/company/criateco/', target: '_blank' },
   ];
 
   const interests = [
