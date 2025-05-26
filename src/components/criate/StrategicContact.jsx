@@ -78,7 +78,7 @@ const StrategicContact = () => {
   };
 
   const contactPoints = [
-    { icon: <Mail size={20} className="text-primary" />, text: 'Lucas@influencehub360.com', href: 'mailto:contato@criate.com.br' },
+    { icon: <Mail size={20} className="text-primary" />, text: 'Contato.lucasdosreis@icloud.com', href: 'mailto:contato@criate.com.br' },
     { icon: <Phone size={20} className="text-primary" />, text: '+55 11 98525-5719', href: 'tel:+551155552742' },
     { icon: <Linkedin size={20} className="text-primary" />, text: 'LinkedIn Criaté', href: 'https://www.linkedin.com/company/criateco/', target: '_blank' },
   ];
@@ -171,13 +171,18 @@ const StrategicContact = () => {
               <h3 className="text-2xl font-semibold text-foreground mb-5">Ações Rápidas</h3>
               <div className="space-y-3">
                 <Button variant="default" size="lg" className="btn-secondary w-full justify-start py-3.5 text-base shadow-glow-secondary" asChild>
-                  <a href="https://wa.me/551155552742?text=Olá! Gostaria de agendar um diagnóstico com a Criaté." target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/5511985255719?text=Olá! Gostaria de agendar um diagnóstico com a Criaté." target="_blank" rel="noopener noreferrer">
                     <TrendingUp size={20} className="mr-3" /> Quero Gerar Demanda
                   </a>
                 </Button>
                 <Button variant="default" size="lg" className="btn-highlight w-full justify-start py-3.5 text-base shadow-glow-highlight" asChild>
                   <a href="mailto:contato@criate.com.br?subject=Interesse em Branding Estratégico">
                     <BrainCircuit size={20} className="mr-3" /> Preciso de Branding e IA
+                  </a>
+                </Button>
+                <Button variant="default" size="lg" className="btn-secondary w-full justify-start py-3.5 text-base shadow-glow-secondary" asChild>
+                  <a href="https://docs.google.com/document/d/1Hb4gy6mSj07dbS3-WZVbvxyE-WvaMmaW2HMIKehuUwI/edit?tab=t.wpzprsllkbu8" target="_blank" rel="noopener noreferrer">
+                    <Zap size={20} className="mr-3" /> Confira nosso Ebook
                   </a>
                 </Button>
               </div>
