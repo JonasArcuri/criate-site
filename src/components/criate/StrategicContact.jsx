@@ -25,19 +25,56 @@ const StrategicContact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
+    const FORM_ENDPOINT = 'https://formspree.io/f/myzwqana'; // <- substitua pelo seu
+
     // Simulação de envio para CRM/Email
     // Em um projeto real, aqui seria a chamada para a API (Supabase Functions, etc.)
-    console.log("Form Data Submitted: ", formData);
-    await new Promise(resolve => setTimeout(resolve, 2000)); 
-    
-    setIsSubmitting(false);
-    toast({
-      title: "Diagnóstico Solicitado!",
-      description: "Sua mensagem foi enviada. Nossa equipe de especialistas entrará em contato em breve.",
-      className: "bg-secondary text-secondary-foreground border-secondary/30",
-    });
-    setFormData({ name: '', company: '', email: '', phone: '', interest: '', message: '' });
+    // console.log("Form Data Submitted: ", formData);
+    // await new Promise(resolve => setTimeout(resolve, 2000)); 
+
+    // setIsSubmitting(false);
+    // toast({
+    //   title: "Diagnóstico Solicitado!",
+    //   description: "Sua mensagem foi enviada. Nossa equipe de especialistas entrará em contato em breve.",
+    //   className: "bg-secondary text-secondary-foreground border-secondary/30",
+    // });
+    // setFormData({ name: '', company: '', email: '', phone: '', interest: '', message: '' });
+
+    try {
+      const response = await fetch(FORM_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Diagnóstico Solicitado!",
+          description: "Sua mensagem foi enviada com sucesso. Entraremos em contato em breve.",
+          className: "bg-secondary text-secondary-foreground border-secondary/30",
+        });
+
+        setFormData({
+          name: '',
+          company: '',
+          email: '',
+          phone: '',
+          interest: '',
+          message: ''
+        });
+      } else {
+        throw new Error("Erro ao enviar. Verifique os dados e tente novamente.");
+      }
+    } catch (error) {
+      toast({
+        title: "Erro ao enviar",
+        description: error.message,
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactPoints = [
@@ -139,13 +176,13 @@ const StrategicContact = () => {
                   </a>
                 </Button>
                 <Button variant="default" size="lg" className="btn-highlight w-full justify-start py-3.5 text-base shadow-glow-highlight" asChild>
-                   <a href="mailto:contato@criate.com.br?subject=Interesse em Branding Estratégico">
+                  <a href="mailto:contato@criate.com.br?subject=Interesse em Branding Estratégico">
                     <BrainCircuit size={20} className="mr-3" /> Preciso de Branding e IA
                   </a>
                 </Button>
               </div>
             </div>
-            
+
             <div>
               <h3 className="text-2xl font-semibold text-foreground mb-5 mt-10">Canais Diretos</h3>
               <div className="space-y-4">
@@ -155,10 +192,10 @@ const StrategicContact = () => {
                     <span className="text-muted-foreground group-hover:text-primary transition-colors">{detail.text}</span>
                   </a>
                 ))}
-                 <div className="flex items-center gap-3 p-3">
-                    <MapPin size={20} className="text-primary" />
-                    <span className="text-muted-foreground">São Paulo, SP - Brasil (Atendimento Global)</span>
-                  </div>
+                <div className="flex items-center gap-3 p-3">
+                  <MapPin size={20} className="text-primary" />
+                  <span className="text-muted-foreground">São Paulo, SP - Brasil (Atendimento Global)</span>
+                </div>
               </div>
             </div>
           </motion.div>
