@@ -176,7 +176,7 @@ const StrategicContact = () => {
                   </a>
                 </Button>
                 <Button variant="default" size="lg" className="btn-highlight w-full justify-start py-3.5 text-base shadow-glow-highlight" asChild>
-                  <a href="https://wa.me/5511985255719?text=Olá! Gostaria de agendar um diagnóstico com a Criaté.">
+                  <a href="https://wa.me/5511985255719?text=Olá! Gostaria de agendar um diagnóstico com a Criaté." target="_blank" rel="noopener noreferrer">
                     <BrainCircuit size={20} className="mr-3" /> Preciso de Branding e IA
                   </a>
                 </Button>
