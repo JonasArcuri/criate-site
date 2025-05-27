@@ -181,7 +181,7 @@ const StrategicContact = () => {
                   </a>
                 </Button>
                 <Button variant="default" size="lg" className="btn-secondary w-full justify-start py-3.5 text-base shadow-glow-secondary" asChild>
-                  <a href="https://pay.kiwify.com.br/UII43cy" target="_blank" rel="noopener noreferrer">
+                  <a href="https://site-ebook-opal.vercel.app/" target="_blank" rel="noopener noreferrer">
                     <Zap size={20} className="mr-3" /> Confira nosso Ebook
                   </a>
                 </Button>
